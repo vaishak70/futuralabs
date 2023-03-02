@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+                background: #90dbee;
+                background-size: auto;
+                margin:0;
+                padding:0;
+            }
+            
+    #main {
+        padding: 10px;
+        text-align: center;
+        
+      }
+      
+      #submain
+      {
+        margin: 2% 20% 2% 20%;
+        padding: 1% 5% 1% 5%;
+        background-color: rgb(246, 242, 242);
+      }
+      .h1{
+       
+                text-align:center;
+      }
+      .name{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .email{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .age{
+        padding-top: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      .option{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+      }
+      </style>
+</head>
+<body>
+    <div id="main">
+
+        <h1 class="h1">Survey Form</h1>
+      
+        <div id="submain">
+          <div class="container-fluid">
+      
+            <p>Let us know how we can improve freeCodeCamp</p>
+      
+            <form>
+              <section class="name">
+                <label id="name-label">*Name:</label>
+                <section class="namebox">
+                <input type="text" class="form-control col-md-4" id="name" placeholder="Enter your name" required>
+              </section>
+              </section>
+      
+              <div class="email">
+                <label>*Email:</label>
+                <div>
+                <input type="email" class="form-control col-md-4" id="email" placeholder="Enter your email" required>
+              </div>
+            </div>
+      
+              <div class="age">
+                <label id="number-label">*Age:</label>
+                <div>
+                <input type="number" class="form-control col-md-4" id="number" placeholder="Enter your age" min="1" max="150"  required>
+              </div>
+            </div>
+      
+              <section class="option">
+                <section>
+
+                <label>Which option best describes your current role?</label>
+              </section>
+              <section>
+                <select >
+            <option>Student</option>
+            <option>Full Time Job</option>
+            <option>Full Time Learner</option>
+            <option>Prefer Not To Say</option>
+            <option>Other</option>
+          </select>
+          </section>
+              </section>
+      
+              <div>
+                <label>*How likely is that you would recommend freeCodeCamp to a friend?</label>
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="recommendRadios" id="recommendRadio1" value="option1" checked>
+                    <label class="form-check-label" for="gridRadios1">Definitely</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="recommendRadios" id="recommendRadio2" value="option2">
+                    <label class="form-check-label" for="gridRadios2">Maybe</label>
+                  </div>
+                  <div class="form-check disabled">
+                    <input class="form-check-input" type="radio" name="recommendRadios" id="gridRadios3" value="option3">
+                    <label class="form-check-label" for="gridRadios3">Not sure</label>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="form-group row text-md-left">
+                <legend class="col-form-label col-md-6 text-md-right">Things that should be improved in the future (Check all that apply):</legend>
+                <div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check1" value="check1">
+                    <label class="form-check-label" for="check1">Front-end Projects</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check2" value="check2">
+                    <label class="form-check-label" for="check2">Back-end Projects</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check3" value="check3">
+                    <label class="form-check-label" for="check">Data Visualization</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="check4" value="check4">
+                    <label class="form-check-label" for="check4">Challenges</label>
+                  </div>
+      
+                </div>
+              </div>
+      
+              
+              </div>
+      
+              
+            </form>
+      
+          </div>
+        </div>
+      
+      </div>
+
+    
+</body>
+</html>
